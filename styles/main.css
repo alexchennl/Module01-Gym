@@ -27,7 +27,10 @@ body {
     padding-bottom: 10px;
 }
 .header-nav a:hover {
+    display: inline-block;
     border-bottom: 1px solid #2B3541;
+    line-height: 1;
+    transition: 0.2s;
 }
 .socials {
     display: flex;
@@ -35,27 +38,25 @@ body {
     padding-left: 340px;
 }
 .socials a {
-    width: 30px;
-    height: 30px;
     text-decoration: none;
+    transition: 0.2s;
+    transform: scale(1);
+    opacity: 0.8;
 }
 .socials a img:hover {
-    width: 38px;
-    height: 38px;
+    transform: scale(1.2);
+    opacity: 1;
 }
-.container-banner {
-    max-width: 1920px;
-    padding-left: 29%;
-}
-.banner {
-    background-image: url(../images/banner-girl.png);
-    background-repeat: no-repeat;
-    background-position: 327px 12px;
-    margin-bottom: 102px;
+.banner-girl {
+    position: absolute;
+    top: 69px;
+    left: 32.2%;
 }
 .banner-box {
+    position: relative;
     max-width: 676px;
     padding-top: 240px;
+    margin-bottom: 102px;
 }
 h1 {
     margin: 0;
@@ -171,6 +172,7 @@ h3 {
     margin-left: 30px;
     display: none;
     cursor: pointer;
+    border: none;
 }
 .item {
     position: relative;
@@ -227,7 +229,7 @@ p {
     flex-direction: column;
     justify-content: flex-end;
     padding: 20px 30px;
-    gap: 40px;
+    overflow: hidden;
 }
 .content-grid-data {
     font-size: 18px;
@@ -265,19 +267,24 @@ p {
     font-weight: 700;
     font-size: 18px;
     color: #2B3541;
+    margin-top: 38px
 }
 .content-grid-text {
-    display: none;
     font-size: 18px;
     line-height: 27px;
     color: #2B3541;
+    visibility: hidden;
+    max-height: 0;
 }
 .content-grid-text-active {
-    display: block;
-    margin-top: -19px;
+    visibility: visible;
+    max-height: 135px;
+    margin-top: 18px;
 }
 .content-grid-item:hover .content-grid-text {
-    display: block;
+    visibility: visible;
+    max-height: 135px;
+    transition: 0.2s linear;
 }
 .content-grid-item:hover {
     cursor: pointer;
@@ -405,13 +412,14 @@ input::placeholder {
 .checkbox:checked + label::after{
    content:'';
    position: absolute;
-   width: 24px;
-   height: 24px;
+   width: 22px;
+   height: 22px;
    transition: all .2s ease;
    opacity: 1;
    left: 0;
    top: calc(50% - 12px);
    background-image: url(../images/mdi_check_box.svg);
+   background-size: cover;
 }
 .checkbox:not(:checked) + label::before{
    content:'';
@@ -515,8 +523,7 @@ input::placeholder {
 }
 footer {
     background-color: #F3F3F3;
-    padding-top: 41px;
-    padding-bottom: 20px;
+    padding-top: 34px;
 }
 .footer-img {
     position: absolute;
@@ -551,7 +558,7 @@ footer {
 }
 .footer {
     position: relative;
-    margin-bottom: 18px;
+    margin-bottom: 24px;
     padding-top: 7px;
 }
 .footer-nav {
@@ -566,7 +573,7 @@ footer {
     height: 27px;
     display: flex;
     gap: 27px;
-    padding-bottom: 17px;
+    padding-bottom: 6px;
 }
 
 /* modal */
