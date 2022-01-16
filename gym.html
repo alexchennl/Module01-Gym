@@ -16,11 +16,14 @@
         <div class="container">
             <div class="header">
                 <img class="logo" src="images/logo.svg" alt="Логотип">
+                <div class="burger">
+                    <a class="burger-menu" href="#popup-menu"></a>
+                </div>
                 <nav>
                     <ul class="nav header-nav">
                         <li><a href="#">Мероприятия</a></li>
                         <li><a href="#">Расписание</a></li>
-                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">О&nbsp;компании</a></li>
                     </ul>
                 </nav>
                 <div class="socials">
@@ -37,7 +40,7 @@
                         <img src="images/banner-girl.png" alt="Бегущая девушка">
                     </div>
                     <div class="banner-box">
-                        <h1>онлайн тренировки любой&nbsp;сложности</h1>
+                        <h1>онлайн&nbsp;тренировки любой&nbsp;сложности</h1>
                             <h2>> 15</h2>
                             <h2 class="banner-box-item">тренировок</h2>
                         <span class="banner-text">в области спортивной физиологии и нутрициологии</span>
@@ -58,6 +61,7 @@
                             <p class="content-flex-title">Марафон выносливости</p>
                             <button type="button" class="content-hover-btn" onclick="openModal()">Участвовать</button>
                             <button type="button" class="content-flex-btn">марафон</button>
+                            <button type="button" class="content-phone-btn" onclick="openModal()"></button>
                         </div> 
                     </div>
                     <div class="item item-two">
@@ -66,6 +70,7 @@
                             <p class="content-flex-title">Как стать тренером?</p>
                             <button type="button" class="content-hover-btn" onclick="openModal()">Участвовать</button>
                             <button type="button" class="content-flex-btn">вебинар</button>
+                            <button type="button" class="content-phone-btn" onclick="openModal()"></button>
                         </div>
                     </div>
                     <div class="item item-three">
@@ -74,6 +79,7 @@
                             <p class="content-flex-title">Йога, как стиль жизни</p>
                             <button type="button" class="content-hover-btn" onclick="openModal()">Участвовать</button>
                             <button type="button" class="content-flex-btn">вебинар</button>
+                            <button type="button" class="content-phone-btn" onclick="openModal()"></button>
                         </div>
                     </div>
                 </div>
@@ -88,38 +94,50 @@
                 <div class="content-grid">
                     <div class="content-grid-item">
                         <p class="content-grid-data">22 июня, 10:00</p>
-                        <img class="content-grid-img1" src="images/body.svg" alt="Накачанное тело">
-                        <p class="content-grid-title">Функциональный тренинг</p>
+                        <div class="flex-line">
+                            <img class="content-grid-img1" src="images/body.svg" alt="Накачанное тело">
+                            <p class="content-grid-title">Функциональный тренинг</p>
+                        </div>
                         <p class="content-grid-text">Вовлекает в работу все мышцы тела.</p>
                     </div>
                     <div class="content-grid-item">
-                        <p class="content-grid-data">24 июня, 10:00</p>
-                        <img class="content-grid-img2" src="images/bottle.svg" alt="Бутылка воды">
-                        <p class="content-grid-title">Body sculpt</p>
-                        <p class="content-grid-text">Упражнения, направленные на наращивание основных мышечных групп с формированием их красивого и привлекательного рельефа.</p>
-                    </div>
-                    <div class="content-grid-item">
-                        <p class="content-grid-data">26 июня, 11:00</p>
-                        <img class="content-grid-img3" src="images/dumbbell.svg" alt="Гантели">
-                        <p class="content-grid-title">L.A.B.</p>
-                        <p class="content-grid-text">Силовая тренировка с акцентом на мышцы ягодиц, ног и пресса.</p>
-                    </div>
-                    <div class="content-grid-item">
                         <p class="content-grid-data">23 июня, 10:00</p>
-                        <img class="content-grid-img4" src="images/jump.svg" alt="Скакалка">
-                        <p class="content-grid-title">Силовой микс</p>
+                        <div class="flex-line">
+                            <img class="content-grid-img4" src="images/jump.svg" alt="Скакалка">
+                            <p class="content-grid-title">Силовой микс</p>
+                        </div>
                         <p class="content-grid-text content-grid-text-active">Упражнения помогут создать красивый рельеф и прийти в&nbsp;спортивную форму.</p>
                     </div>
                     <div class="content-grid-item">
+                        <p class="content-grid-data">24 июня, 10:00</p>
+                        <div class="flex-line">
+                            <img class="content-grid-img2" src="images/bottle.svg" alt="Бутылка воды">
+                            <p class="content-grid-title">Body sculpt</p>
+                        </div>
+                        <p class="content-grid-text">Упражнения, направленные на наращивание основных мышечных групп.</p>
+                    </div>
+                    <div class="content-grid-item">
                         <p class="content-grid-data">25 июня, 11:00</p>
-                        <img class="content-grid-img5" src="images/heart.svg" alt="Сердце">
-                        <p class="content-grid-title">Дыхательные практики</p>
+                        <div class="flex-line">
+                            <img class="content-grid-img5" src="images/heart.svg" alt="Сердце">
+                            <p class="content-grid-title">Дыхательные практики</p>
+                        </div>
                         <p class="content-grid-text">Помогают улучшить психическое и физическое здоровье.</p>
                     </div>
                     <div class="content-grid-item">
+                        <p class="content-grid-data">26 июня, 11:00</p>
+                        <div class="flex-line">
+                            <img class="content-grid-img3" src="images/dumbbell.svg" alt="Гантели">
+                            <p class="content-grid-title">L.A.B.</p>
+                        </div>
+                        <p class="content-grid-text">Силовая тренировка с акцентом на мышцы ягодиц, ног и пресса.</p>
+                    </div>
+                    <div class="content-grid-item">
                         <p class="content-grid-data">27 июня, 10:00</p>
-                        <img class="content-grid-img6" src="images/weight.svg" alt="Гиря">
-                        <p class="content-grid-title">Комплексная разминка</p>
+                        <div class="flex-line">
+                            <img class="content-grid-img6" src="images/weight.svg" alt="Гиря">
+                            <p class="content-grid-title">Комплексная разминка</p>
+                        </div>
                         <p class="content-grid-text">Подготовка тела перед физической нагрузкой.</p>
                     </div>
                 </div>
@@ -127,7 +145,7 @@
         </section>
         <div class="row">
             <div class="container">
-                <h3 class="row-title">Подпишитесь на рассылку</h3>
+                <h3 class="row-title">Подпишитесь на&nbsp;рассылку</h3>
                 <div class="subscription">
                     <input type="email" placeholder="Ваш e-mail">
                     <button type="button" class="btn subscription-btn">подписаться</button>
@@ -143,7 +161,7 @@
             <div class="container">
                 <div class="aside-flex">
                     <div class="aside-box">
-                        <h3>О компании</h3>
+                        <h3>О&nbsp;компании</h3>
                         <p>Наша компания является одной из&nbsp;немногих, кто предлагает фитнес услуги онлайн! Оставайтесь с&nbsp;нами и вы сами увидите, что мы проводим не&nbsp;только онлайн-тренировки.</p>
                         <button type="button" class="btn aside-btn">Записаться</button>
                     </div>
@@ -152,7 +170,7 @@
                 <div class="aside-flex2">
                     <div class="aside-text aside-text-a">
                         <p class="aside-title">Экономия времени</p>
-                        <p class="aside-description">Не нужно тратить время на дорогу</p>
+                        <p class="aside-description">Не нужно тратить время на&nbsp;дорогу</p>
                     </div>
                     <div class="aside-text aside-text-b">
                         <p class="aside-title">Индивидуальный подход</p>
@@ -160,11 +178,11 @@
                     </div>
                     <div class="aside-text aside-text-c">
                         <p class="aside-title">Экономия денег</p>
-                        <p class="aside-description">Средняя цена одной тренировки - 700₽</p>
+                        <p class="aside-description">Средняя цена одной тренировки -&nbsp;700₽</p>
                     </div>
                     <div class="aside-text aside-text-d">
                         <p class="aside-title">Опытный персонал</p>
-                        <p class="aside-description">Стаж работы у наших тренеров от 5 лет</p>
+                        <p class="aside-description">Стаж работы у наших тренеров от 5&nbsp;лет</p>
                     </div>
                 </div> 
             </div>
@@ -179,11 +197,15 @@
                     <li><a href="#">Расписание</a></li>
                     <li><a href="#">О&nbsp;компании</a></li>
                 </ul>
-                <img src="images/circle.svg" alt="" class="footer-img">
-                <span>info@freefit.com</span>
-                <div class="footer-socials">
-                    <a href="#"><img src="images/IN.svg" alt="Инстаграм"></a>
-                    <a href="#"><img src="images/FB.svg" alt="Фэйсбук"></a>
+                <div class="site-socials">
+                    <div class="site">
+                        <img src="images/circle.svg" alt="" class="footer-img">
+                        <span>info@freefit.com</span>
+                    </div>
+                    <div class="footer-socials">
+                        <a href="#"><img src="images/IN.svg" alt="Инстаграм"></a>
+                        <a href="#"><img src="images/FB.svg" alt="Фэйсбук"></a>
+                    </div>
                 </div>
             </div>
             <div class="additional">
@@ -193,14 +215,32 @@
         </div>
     </footer>
     <div id="modal" class="modal">
-        <p class="modal-title">Заявка на участие «Марафон выносливости»</p>
-        <p class="modal-description">Заполните все поля, и мы пришлем информацию в ближайшее время</p>
+        <img src="images/circle.svg">
+        <p class="modal-title">Заявка на участие «Марафон&nbsp;выносливости»</p>
+        <p class="modal-description">Заполните все поля, и мы пришлем информацию&nbsp;в&nbsp;ближайшее&nbsp;время</p>
         <div class="modal-input">
             <input type="email" placeholder="Ваш e-mail" required>
             <input type="tel" placeholder="Ваш номер телефона" required>
         </div>
         <button type="button" class="modal-btn">отправить</button>
         <button type="button" class="close-modal" onclick="closeModal()"></button>
+    </div>
+    <div id="popup-menu" class="popup">
+        <div class="popup-content">
+            <div class="header-menu">
+                <img src="images/logo.svg" class="header-menu-logo">
+                <a class="header-menu-close" href="##"></a>
+            </div>
+            <div class="body-menu">
+                <p>Мероприятия</p>
+                <p>Расписание</p>
+                <p class="last">О компании</p>
+            </div>
+            <div class="popup-socials">
+                <img src="images/IN.svg">
+                <img src="images/FB.svg">
+            </div>
+        </div>
     </div>
     <script>
         // smooth scroll
