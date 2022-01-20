@@ -4,12 +4,15 @@ body {
 .container {
     max-width: 1140px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0;
+    padding-top: 43px;
 }
 .logo {
     width: 97px;
@@ -48,8 +51,11 @@ body {
 }
 .banner-girl {
     position: absolute;
-    top: 69px;
+    top: 119px;
     left: 32.2%;
+}
+.banner-girl-img {
+    max-width: 915px;
 }
 .banner-box {
     position: relative;
@@ -300,7 +306,7 @@ p {
 }
 .content-grid-item:hover {
     cursor: pointer;
-    border: none;
+    border: 1px solid transparent;
     box-shadow: 0px 4px 30px rgba(43, 53, 65, 0.2);
 }
 .content-grid {
@@ -536,6 +542,7 @@ input::placeholder {
 footer {
     background-color: #F3F3F3;
     padding-top: 34px;
+    padding-bottom: 22px;
 }
 .footer-img {
     position: absolute;
@@ -550,6 +557,9 @@ footer {
     font-size: 16px;
     color: #2B3541;
     margin-right: 62px;
+}
+.footer span:hover {
+    cursor: pointer;
 }
 .additional p {
     font-size: 14px;
@@ -651,6 +661,9 @@ footer {
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 80px;
+}
+.modal-btn:hover {
+    cursor: pointer;
 }
 .close-modal {
     background-image: url(../images/close.svg);
@@ -756,7 +769,6 @@ footer {
 @media (max-width: 1000px) {
     .container {
         max-width: 800px;
-        margin: 0 1.5%;
     }
     .logo {
         width: 92px;
