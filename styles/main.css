@@ -933,10 +933,17 @@ footer {
         font-size: 11px;
     }
 }
-@media (min-width: 361px) {
+@media (min-width: 701px) {
     .burger {
         display: none;
     }
+}
+@media (max-width: 700px) {
+    .header-nav {
+        display: none;
+    }
+}
+@media (min-width: 361px) {
     .content-phone-btn {
         display: none;
     }
@@ -944,9 +951,6 @@ footer {
 @media (max-width: 360px) {
     .container {
         max-width: 360px;
-    }
-    .header-nav {
-        display: none;
     }
     .header {
         margin-top: 30px;
