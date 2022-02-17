@@ -425,7 +425,6 @@ input::placeholder {
    left: 0;
    top: calc(50% - 12px);
    background-color: transparent;
-   border-radius: 2px;
 }
 .checkbox:checked + label::after{
    content:'';
@@ -447,7 +446,6 @@ input::placeholder {
    left: 0;
    top: calc(50% - 10px);
    background-color: transparent;
-   border-radius: 2px;
    border: 2px solid #5d575f;
 }
 .checkbox:not(:checked) + label::after{
@@ -590,12 +588,19 @@ footer {
     margin-right: 217px;
     padding-left: 76px;
 }
+.footer-nav a:hover {
+    border-bottom: 1px solid #2B3541;
+}
 .footer-socials {
     width: 27px;
     height: 27px;
     display: flex;
     gap: 27px;
     padding-bottom: 6px;
+}
+.footer-socials a img:hover {
+    transform: scale(1.2);
+    opacity: 1;
 }
 .site-socials {
     display: flex;
@@ -964,14 +969,9 @@ footer {
         gap: 15px;
     }
 }
-@media (min-width: 361px) {
-    .content-phone-btn {
-        display: none;
-    }
-}
-@media (max-width: 360px) {
+@media (max-width: 575px) {
     .container {
-        max-width: 360px;
+        max-width: 575px;
     }
     .header {
         margin-top: 30px;
@@ -987,9 +987,11 @@ footer {
     .banner-box {
         padding-top: 60px;
         margin-bottom: 0;
+        margin-left: 4%;
+        margin-right: 4%;
     }
     h1 {
-        font-size: 23px;
+        font-size: 6vw;
         line-height: 125%;
     }
     h2 {
@@ -1013,7 +1015,7 @@ footer {
         display: none;
     }
     .banner-girl img {
-        width: 340px;
+        width: 90vw;
         height: 100%;
     }
     .content-flex {
@@ -1026,18 +1028,18 @@ footer {
         height: 100vw;
     }
     .content-flex-date {
-        font-size: 12px;
+        font-size: 15px;
         margin-top: 20px;
         margin-bottom: 16px;
     }
     .content-flex-title {
-        font-size: 16px;
+        font-size: 25px;
         line-height: 120%;
     }
     .content-flex-btn {
-        font-size: 12px;
-        width: 87px;
-        height: 30px;
+        font-size: 19px;
+        width: 130px;
+        height: 40px;
         left: 0;
     }
     .item:hover .content-hover-btn {
@@ -1129,7 +1131,7 @@ footer {
     }
     .row {
         margin-bottom: 80px;
-        max-width: 360px;
+        max-width: 575px;
         position: relative;
     }
     .row-title {
@@ -1153,12 +1155,12 @@ footer {
     .agreement {
         margin-bottom: 0;
         position: absolute;
-        top: 271px;
+        top: 235px;
         margin-left: 10px;
     }
     .aside-cover {
         position: absolute;
-        top: 812px;
+        top: 745px;
     }
     .aside {
         display: flex;
@@ -1177,7 +1179,7 @@ footer {
     .aside-btn {
         padding: 20px 100px;
         position: absolute;
-        top: 706px;
+        top: 670px;
     }
     .aside-box {
         position: relative;
@@ -1195,12 +1197,11 @@ footer {
         width: 97px;
         height: 30px;
         position: absolute;
-        top: -31px;
-        left: 118px;
+        top: -4vw;
+        left: 29vw;
     }
     .footer, .additional {
         flex-direction: column;
-        align-items: baseline;
     }
     .site-socials {
         display: flex;
@@ -1208,6 +1209,7 @@ footer {
         gap: 146px;
         margin-top: 25px;
         margin-bottom: 44px;
+        margin-left: -10%;
     }
     .footer span {
         font-size: 12px;
@@ -1232,5 +1234,11 @@ footer {
     }
     footer {
         background-color: #FFFFFF;
+        padding-top: 21vw;
+    }
+}
+@media (min-width: 361px) {
+    .content-phone-btn {
+        display: none;
     }
 }
